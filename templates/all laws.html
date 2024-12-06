@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+
+  <div class="container-fluid " style="background:url({%static 'images/about.jpg' %});background-size: cover" >
+    <div class="lyr" style="background-color: rgba(62,71,29, 0.50);padding: 100px;">
+    <div class="container ">
+      <div class="row text-light text-center">
+        <div class="col-md-12">
+          <h2 style="font-size:60px"><span style="font-weight: bold;">Eco nature</span>Laws</h2>
+          <h5>Home ->Laws </h5>
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+
+    <div class="container pt-5">
+      
+      <div class="row pt-3 pb-3 text-light" style="background-color: #6ac610;">
+        <div class="col-1">
+          <h4>Year</h4>
+        </div>
+        <div class="col-11">
+          <h4>Description</h4>
+        </div>
+      </div>
+      
+
+
+    
+      {% for i in data %}
+      <div class="row pt-3">
+        <div class="col-1">
+          <h5 >{{i.year}}</h5>
+        </div>
+        <div class="col-11">
+          <p>{{i.description}}</p>
+        </div>
+      </div>
+      <hr/>
+      {% endfor %}
+    </div>
+
+
+
+
+    {% endblock %}

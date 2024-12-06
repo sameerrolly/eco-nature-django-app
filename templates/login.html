@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+	
+<div style="background-image: url({%static 'images/greennewdeal.jpg' %}); ">
+	<div class="row " style="padding-top: 80px ; padding-bottom: 130px">
+		<div class="col-md-4"></div>
+		<div class="col-md-4  text-center " style="background-color: yellowgreen; border-bottom-left-radius: 2px " >
+			
+				
+			<form method="POST" action="" class="p-3">
+				{% csrf_token %}
+				<br/>
+				<h1 style="color:whitesmoke ;border: 2px; font-family: cursive" >Log In</h1>
+                <br/><br/>
+				<div class="input-group mb-3">
+  					<div class="input-group-prepend">
+    					<span class="input-group-text p-3" id="basic-addon1"><i class="icofont-user-alt-7"></i></span>
+  					</div>
+  							
+  					<input type="email" class="form-control"name="em"  placeholder="Email Address" aria-label="Username" aria-describedby="basic-addon1">
+				</div>
+				
+                
+            <div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text p-3" id="basic-addon1"><i class="icofont-unlocked"></i></span>
+  </div>
+  <input type="password" name="pw" class="form-control" placeholder="Password" aria-label="Username" aria-describedby="basic-addon1" style="font-family: cursive">
+</div>        <br/>
+		
+		<a href="{% url 'forgotpassword' %}" style="text-decoration:none; color:white">Forgot password</a>
+		<br/>
+                <button type="submit" class="btn btn-outline-light" style="color: whitesmoke">Login</button>
+				<p class="text-dark pt-3">New User <a href="">Click Here </a>to Signup </p> 
+			</form>
+		</div>
+		<div class="col-md-4"></div>
+		</div></div>
+
+
+
+		{% if msg %}
+		<script>
+			alert("{{msg}}")
+		</script>
+		{% endif %}
+
+{% endblock %}

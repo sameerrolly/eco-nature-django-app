@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+
+  <div class="container-fluid " style="background:url({%static 'images/about.jpg' %});background-size: cover" >
+    <div class="lyr" style="background-color: rgba(62,71,29, 0.50);padding: 100px;">
+    <div class="container ">
+      <div class="row text-light text-center">
+        <div class="col-md-12">
+          <h2 style="font-size:60px"><span style="font-weight: bold;">University</span></h2>
+          <h5>Home ->University </h5>
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+
+<div class="container">
+  <div class="row">
+  <div class="col-1"></div>
+  <div class="col-10">
+{% for i in data %}
+
+<div class="row mt-5 " style="box-shadow: 0px 0px 10px #6ac610">
+  <div class="col-4">
+    <img src="{{i.images.url}}" width="100%" height="300px" style="margin-left:-10px">
+  </div>
+  <div class="col-5">
+    <h2 class="pt-2" style="color:#6ac610">{{i.uni_name}}</h2>
+    <h6>{{i.country_name}} | {{i.city}}</h6>
+    <p>{{i.description|truncatechars:"200"}}</p>
+    <a href="{% url 'details_university' id=i.id %}" class="btn rounded-pill " style="background:#000; color:#FFF">View more</a>
+  </div>
+  <div class="col-3 border-start">
+    <h6 class="pt-3">SUBJECT SCORE</h6>
+<h3>{{i.subject_score}}</h3><hr>
+<h6>GLOBAL SCORE</h6>
+<h3>{{i.global_score}}</h3><hr>
+<h6>ENROLLMENT</h6>
+<h3 class="pb-3">{{i.enrollement}}</h3>
+
+
+  </div>
+
+</div>
+
+{% endfor %}
+
+</div>
+<div class="col-1"></div>
+</div>
+
+
+
+
+
+
+    {% endblock %}

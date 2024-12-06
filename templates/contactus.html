@@ -1,0 +1,103 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+
+  <div class="cotainer-fluid " style="background:url( {%static 'images/about.jpg' %});background-size: cover">
+    <div class="lyr" style="background-color: rgba(62,71,29, 0.50);padding: 100px;">
+    <div class="container ">
+      <div class="row text-light text-center">
+        <div class="col-md-12">
+          <h2 style="font-size:60px"><span style="font-weight: bold;">Contact</span> Us</h2>
+          <h5>Home -> Contactus</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+
+
+    <!------------------------------>
+    <div class="container pt-5">
+    <div class="row pt-5">
+      <div class="col-md-6">
+        <h4 style="font-weight: bold;">OUR ADDRESS</h4>
+        <p></p>
+        <div class="row">
+          <div class="col-md-2">
+            <i class="icofont-map-pins icofont-3x"style="color: #6ac610"></i>
+          </div>
+          <div class="col-md-10">
+            <h5 style="font-weight: bold;">Address</h5>
+            <p style="color: #999">Baba Bakala Dist:Amritsar Pin Code:143205</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-2">
+            <i class="icofont-phone icofont-3x"style="color: #6ac610"></i>
+          </div>
+          <div class="col-md-10">
+            <h5 style="font-weight: bold;">Phone</h5>
+            <p style="color: #999">9878475770,9501469081</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-2">
+            <i class="icofont-email icofont-3x"style="color: #6ac610"></i>
+          </div>
+          <div class="col-md-10">
+            <h5 style="font-weight: bold;">Email</h5>
+            <p style="color: #999">harmandeep301k@gmail.com,jeet69081@gmail.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <img src={%static "images/co1.jpg" %} width="100%" height="450">
+      </div>
+    </div>
+  </div>
+
+  <!----------------------------------->
+
+
+  <div class="container pt-5">
+    <div class="row pt-5">
+      <div class="col-md-5">
+        <h4 style="font-weight: bold;">OUR LOCATION ON MAP</h4>
+<br/>
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27169.85794126198!2d74.84327394295215!3d31.654865304803494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39196493fdde71ef%3A0x5a89f3cec3595534!2sRanjit%20Avenue%2C%20Amritsar%2C%20Punjab!5e0!3m2!1sen!2sin!4v1590639977888!5m2!1sen!2sin" width="90%" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" style="border-radius: 10px; border:2px solid lack"></iframe>
+      </div>
+      <div class="col-md-7">
+        <h4 style="font-weight: bold;">SEND MESSAGE</h4>
+<br/>
+       
+
+<form action="" method="POST">
+
+          <div class="row ">
+            <div class="col-md-6">
+              <input type="text" name="nm" placeholder="Your Name" class="form-control form-control-lg">
+            </div>
+            <div class="col-md-6">
+              <input type="email" name="em" placeholder="Your Email" class="form-control form-control-lg">
+            </div>
+          </div>
+          <div class="row pt-4 text-right">
+            <div class="col-md-12">
+            <textarea class="form-control form-control-lg" rows="5" name="msg" placeholder="Message" ></textarea>
+            <br/>
+            <button type="submit"class="btn btn-lg" style="background-color: #6ac610; font-weight: bolder; color: white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SEND&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+          </div>
+        </form>
+      </div>
+    </div></div>
+  </form>
+  </div>
+  <br/>  
+
+   </div>
+ </div>
+
+
+ {% endblock %}

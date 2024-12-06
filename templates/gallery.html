@@ -1,0 +1,142 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<html>
+<head>
+    <title>project</title>
+    <link href="{%static 'css/bootstrap.min.css' %}" rel="stylesheet" />
+    <link href="{%static 'icofont/icofont.min.css'%}" rel="stylesheet" />
+    </head>
+<body>
+
+  <div class="cotainer-fluid " style="background:url(  {%static 'images/about.jpg' %} );background-size: cover" >
+    <div class="lyr" style="background-color: rgba(62,71,29, 0.50);padding: 100px;">
+    <div class="container ">
+      <div class="row text-light text-center">
+        <div class="col-md-12">
+          <h2 style="font-size:60px"><span style="font-weight: bold;">OUR</span> GALLERY</h2>
+          <h5>Home -> Gallery</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+
+
+    <!------------------------------>
+   
+   <div class="container">
+     <div class="row pt-5">
+       <div class="col-md-12 text-center">
+         
+         <a href="#ENVIRONMENT" class="btn btn-outline-light ab" onclick="openpic('ENVIRONMENT')">ENVIRONMENT</a>
+         <a href="#ECO" class="btn btn-outline-light ab" onclick="openpic('ECO')">ECO</a>
+         <a href="#ENERGY" class="btn btn-outline-light ab" onclick="openpic('ENERGY')">ENERGY</a>
+         <a href="#ANIMALS" class="btn btn-outline-light ab" onclick="openpic('ANIMALS')">ANIMALS</a>
+         <a href="#PLANTS" class="btn btn-outline-light ab" onclick="openpic('PLANTS')">PLANTS</a>
+       </div>
+     </div>
+<div id="ENVIRONMENT" class="hh pt-5" >
+  <h3 class="text-center pt-5">-----ENVIRONMENT-----</h3>
+<div class="row pt-5" >
+  <div class="col-md-3"> <img src={%static "images/ev1.jpg" %} height="250px" width="270px" style="box-shadow: 7px 7px 10px #6ac610"></div>
+  <div class="col-md-3"> <img src={%static "images/ev2.jpg" %}  height="250px" width="270px" style="box-shadow: 7px 7px 10px #6ac610"> </div>
+  <div class="col-md-3"> <img src={%static "images/ev3.jpg" %} height="250px" width="270px" style="box-shadow: 7px 7px 10px #6ac610"> </div>
+  <div class="col-md-3"> <img src={%static "images/ev4.jpeg" %}  height="250px" width="270px" style="box-shadow: 7px 7px 10px #6ac610"> </div>
+</div>
+<div class="row pt-3"  >
+  <div class="col-md-3"> <img src={%static "images/ev5.jpg" %}  height="250px" width="270px" style="box-shadow: 7px 7px 10px #6ac610"> </div>
+  <div class="col-md-3"> <img src={%static "images/ev6.jpg" %}  height="250px" width="270px" style="box-shadow: 7px 7px 10px #6ac610"> </div>
+  <div class="col-md-3"> <img src={%static "images/ev7.jpg" %}  height="250px" width="270px" style="box-shadow: 7px 7px 10px #6ac610"> </div>
+  <div class="col-md-3"> <img src={%static "images/ev8.jpg" %} height="250px" width="270px" style="box-shadow: 7px 7px 10px #6ac610"> </div>
+</div>
+</div>
+
+
+<div id="ECO" style="display:none" class="hh pt-5" >
+  <h3 class="text-center pt-5">-----ECO-----</h3>
+<div class="row pt-5" >
+  <div class="col-md-3"> <img src={%static "images/ec1.jpg" %} height="250px" width="270px" style="box-shadow: 7px 7px 10px #6ac610"></div>
+  <div class="col-md-3"> <img src={%static "images/ec2.jpg" %} height="250px" width="270px" style="box-shadow: 7px 7px 10px #6ac610"> </div>
+  <div class="col-md-3"> <img src={%static "images/ec3.jpg" %} height="250px" width="270px" style="box-shadow: 7px 7px 10px #6ac610"> </div>
+  <div class="col-md-3"> <img src={%static "images/ec4.jpg" %}  height="250px" width="270px" style="box-shadow: 7px 7px 10px #6ac610"> </div>
+</div>
+<div class="row pt-3" >
+  <div class="col-md-3"> <img src={%static "images/ec5.jpg" %}  height="250px" width="270px" style="box-shadow: 7px 7px 10px #6ac610"> </div>
+  <div class="col-md-3"> <img src={%static "images/ec6.jpg" %} height="250px" width="270px" style="box-shadow: 7px 7px 10px #6ac610"> </div>
+  <div class="col-md-3"> <img src={%static "images/ec7.jpg" %}  height="250px" width="270px" style="box-shadow: 7px 7px 10px #6ac610"> </div>
+  <div class="col-md-3"> <img src={%static "images/ec8.jpg" %} height="250px" width="270px" style="box-shadow: 7px 7px 10px #6ac610"> </div>
+</div>
+</div>
+
+
+
+
+<div id="ENERGY"style="display:none"  class="hh pt-5">
+  <h3 class="text-center pt-5">-----ENERGY-----</h3>
+<div class="row pt-5" >
+  <div class="col-md-3"> <img src={%static "images/e1.jpg" %}  height="250px" width="270px" style="box-shadow: 7px 7px 10px #6ac610"></div>
+  <div class="col-md-3"> <img src={%static "images/e2.jpg" %} height="250px" width="270px" style="box-shadow: 7px 7px 10px #6ac610"> </div>
+  <div class="col-md-3"> <img src={%static "images/e3.jpg" %} height="250px" width="270px" style="box-shadow: 7px 7px 10px #6ac610"> </div>
+  <div class="col-md-3"> <img src={%static "images/e4.jpg" %} height="250px" width="270px" style="box-shadow: 7px 7px 10px #6ac610"> </div>
+</div>
+<div class="row pt-3" >
+  <div class="col-md-3"> <img src={%static "images/e5.jpg" %} height="250px" width="270px" style="box-shadow: 7px 7px 10px #6ac610"> </div>
+  <div class="col-md-3"> <img src={%static "images/e6.jpg" %} height="250px" width="270px" style="box-shadow: 7px 7px 10px #6ac610"> </div>
+  <div class="col-md-3"> <img src={%static "images/e7.jpg" %} height="250px" width="270px" style="box-shadow: 7px 7px 10px #6ac610"> </div>
+  <div class="col-md-3"> <img src={%static "images/e8.jpg" %}  height="250px" width="270px" style="box-shadow: 7px 7px 10px #6ac610"> </div>
+</div>
+</div>
+
+
+
+<div id="ANIMALS" style="display:none" class="hh pt-5">
+  <h3 class="text-center pt-5">-----ANIMALS-----</h3>
+<div class="row pt-5" >
+  <div class="col-md-3"> <img src={%static "images/a1.jpg" %} height="250px" width="270px" style="box-shadow: 7px 7px 10px #6ac610"></div>
+  <div class="col-md-3"> <img src={%static "images/a2.jpg" %} height="250px" width="270px" style="box-shadow: 7px 7px 10px #6ac610"> </div>
+  <div class="col-md-3"> <img src={%static "images/a3.jpg" %} height="250px" width="270px" style="box-shadow: 7px 7px 10px #6ac610"> </div>
+  <div class="col-md-3"> <img src={%static "images/a4.jpg" %} height="250px" width="270px" style="box-shadow: 7px 7px 10px #6ac610"> </div>
+</div>
+<div class="row pt-3" >
+  <div class="col-md-3"> <img src={%static "images/a5.jpg" %} height="250px" width="270px" style="box-shadow: 7px 7px 10px #6ac610"> </div>
+  <div class="col-md-3"> <img src={%static "images/a6.jpg" %} height="250px" width="270px" style="box-shadow: 7px 7px 10px #6ac610"> </div>
+  <div class="col-md-3"> <img src={%static "images/a7.jpg" %} height="250px" width="270px" style="box-shadow: 7px 7px 10px #6ac610"> </div>
+  <div class="col-md-3"> <img src={%static "images/a8.jpg" %} height="250px" width="270px" style="box-shadow: 7px 7px 10px #6ac610"> </div>
+</div>
+</div>
+
+
+<div id="PLANTS" style="display:none" class="hh pt-5">
+  <h3 class="text-center pt-5">-----PLANTS-----</h3>
+<div class="row pt-5 " >
+  <div class="col-md-3"> <img src={%static "images/p1.jpg" %} height="250px" width="270px" style="box-shadow: 7px 7px 10px #6ac610"></div>
+  <div class="col-md-3"> <img src={%static "images/p2.jpg" %} height="250px" width="270px" style="box-shadow: 7px 7px 10px #6ac610"> </div>
+  <div class="col-md-3"> <img src={%static "images/p3.jpg" %} height="250px" width="270px" style="box-shadow: 7px 7px 10px #6ac610"> </div>
+  <div class="col-md-3"> <img src={%static "images/p4.jpg" %} height="250px" width="270px" style="box-shadow: 7px 7px 10px #6ac610"> </div>
+</div>
+<div class="row pt-3 pb-5" >
+  <div class="col-md-3"> <img src={%static "images/p5.jpg" %} height="250px" width="270px" style="box-shadow: 7px 7px 10px #6ac610"> </div>
+  <div class="col-md-3"> <img src={%static "images/p6.jpg" %} height="250px" width="270px" style="box-shadow: 7px 7px 10px #6ac610"> </div>
+  <div class="col-md-3"> <img src={%static "images/p7.jpg" %} height="250px" width="270px" style="box-shadow: 7px 7px 10px #6ac610"> </div>
+  <div class="col-md-3"> <img src={%static "images/p8.jpg" %} height="250px" width="270px" style="box-shadow: 7px 7px 10px #6ac610"> </div>
+</div>
+</div>
+
+</div></div><br/>
+   
+
+    
+    
+    <script>
+                    function openpic(data) {
+                      var i;
+                      var x = document.getElementsByClassName("hh");
+                      for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";  
+                      }
+                      document.getElementById(data).style.display = "block";  
+                    }
+      </script>              
+ </body></html> 
+ {% endblock %}

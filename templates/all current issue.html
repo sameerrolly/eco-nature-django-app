@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+
+  <div class="container-fluid " style="background:url({%static 'images/about.jpg' %});background-size: cover" >
+    <div class="lyr" style="background-color: rgba(62,71,29, 0.50);padding: 100px;">
+    <div class="container ">
+      <div class="row text-light text-center">
+        <div class="col-md-12">
+          <h2 style="font-size:60px"><span style="font-weight: bold;">Current</span> Issue</h2>
+          <h5>Home ->Current issue</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+
+    <!---------------------->
+    <div class="container">
+      <div class="row">
+        {% for i in data %}
+
+        <div class="col-3 mt-5">
+          <div class="card" style="width: 16rem;box-shadow: 7px 7px 10px #6ac610">
+            {% if i.image %}
+  <img src="{{i.image.url}}" class="card-img-top" alt="..." height="200px">
+  {% endif %}
+  <div class="card-body" style="background-color:#eee;">
+    <h5 class="card-title">{{i.title |truncatechars:"20"}}</h5>
+    <p class="card-text">{{i.description|truncatechars:"100"}}</p>
+    <a href="{% url 'details_current_issue' id=i.id %}" class="btn rounded-pill " style="background:#6ac610; color:#FFF">View more</a>
+  </div>
+</div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+
+<br><br>
+
+
+    {% endblock %}

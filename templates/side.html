@@ -1,0 +1,78 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Project ADMIN - PANEL </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+    <!-- CSS files -->
+    <link rel="stylesheet" href= "{%static "css/bootstrap.min.css" %}">
+    <link rel="stylesheet" href="{%static "icofont/icofont.css" %}">
+    <link rel="stylesheet" href= "{%static "sidebar/style.default.css" %}">
+    <link rel="shortcut icon" href="{%static "favicon.png" %}">
+    <link rel="stylesheet" href= "{%static "sidebar/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css" %}">
+
+  </head>
+  <body class="bg-dark">
+    <!-- Side Navbar -->
+    <nav class="side-navbar">
+      <div class="side-navbar-wrapper">
+        <!-- Sidebar Header    -->
+        <div class="sidenav-header d-flex align-items-center justify-content-center">
+          <!-- User Info-->
+          <div class="sidenav-header-inner text-center">
+            <h2 class="h5">Enviroment Alert</h2>
+          </div>
+          <!-- Small Brand information, appears on minimized sidebar-->
+          <div class="sidenav-header-logo"><a href="#" class="brand-small text-center"> <strong>B</strong><strong class="text-primary">D</strong></a></div>
+        </div>
+        <!-- Sidebar Navigation Menus-->
+        <div class="main-menu">
+         
+          <ul id="side-main-menu" class="side-menu list-unstyled">
+<li><a href="{% url 'myprofile' %}"> <i class="icofont icofont-square"></i>My Profile</a></li>
+<li><a href="{% url 'Edit_profile' %}"> <i class="icofont icofont-square"></i>Edit Profile</a></li>
+<li><a href="{% url 'change_password' %}"> <i class="icofont icofont-square"></i>Change Password </a></li>
+
+<li><a href="{% url 'alltechnology' %}"> <i class="icofont icofont-square"></i>Technology</a></li>
+<li><a href="{% url 'allhealth' %}"> <i class="icofont icofont-square"></i>Health</a></li>
+<li><a href="{% url 'review' %}"> <i class="icofont icofont-square"></i>Review </a></li>
+<li><a href="{% url 'help_support' %}"> <i class="icofont icofont-square"></i>Help & support </a></li>
+<li><a href="{% url 'logout' %}"> <i class="icofont icofont-square"></i>Logout </a></li>
+            
+
+              
+            
+           
+          </ul>
+        </div>
+        
+      </div>
+    </nav>
+    <div class="page " style="background-color: lightgreen">
+      <!-- navbar-->
+      <header class="header">
+        <nav class="navbar">
+          
+        </nav>
+      </header>
+      
+        {% block content %}
+      {% endblock %}
+      </div>
+      <!-- header ends here --> 
+      
+      
+
+
+      <!-- footer --> 
+<!-- JavaScript files-->
+    <script src= "{%static "js/jquery-3.4.1.min.js" %}"></script>
+    <script src= "{%static "js/bootstrap.bundle.min.js" %}"></script>
+    <script src= "{%static "sidebar/front.js" %}"></script>
+<script src= "{%static "sidebar/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js" %}"></script>
+  </body>
+</html>

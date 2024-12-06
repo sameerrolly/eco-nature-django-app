@@ -1,0 +1,39 @@
+{% extends 'side.html' %}
+{% block content %}
+{% load static %}
+<div class="container">
+    <form>
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-8 text-center pt-5">
+            <h1 style="color: white;font-size:45px;font-family: cursive;" >Re<span style="color:black">view</span></h1>
+
+            <div class="row">
+                <div class="col-3 text-end">
+                    <h5 class="pt-2">Title</h5>
+                </div>
+                <div class="col-9">
+                    <input type="text" class="form-control " name="">
+                </div>
+            </div>
+
+            <div class="row pt-4">
+                <div class="col-3 text-end">
+                    <h5 class="pt-2">Message</h5>
+                </div>
+                <div class="col-9">
+                    <textarea class="form-control " rows="5"></textarea>
+                </div>
+            </div>
+
+            <div class="pt-4">
+                <button type="submit" class="btn btn-dark ps-5 pe-5">Send</button>
+            </div>
+        </div>
+        <div class="col-1"></div>
+    </div>
+</form>
+    </div>
+
+    
+   {% endblock %}

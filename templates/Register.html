@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<div style="background-image: url({%static 'images/greennewdeal.jpg' %}); ">
+                                                                               
+                                                                               
+   
+      
+           <div class="row text-center pt-5 pb-5" >
+               <div class="col-md-4"></div>
+               <div class="col-md-4" style="background:yellowgreen; border-2px yellow;">
+            
+                <br/><br/>
+                   
+                   <h1 style="color: azure; font-family: cursive" >Sign Up</h1>
+                 
+                   	
+                        <form action="" class="p-3" method="POST">
+                          {% csrf_token %}
+                          
+    <div class="input-group mb-3">
+                          
+  <div class="input-group-prepend">
+    <span class="input-group-text p-3" id="basic-addon1"><i class="icofont-user-alt-7"></i></span>
+  </div> 
+  <input type="text" class="form-control" placeholder="First Name" pattern="[a-zA-Z ]{3,40}" aria-label="Username" required name="fn" aria-describedby="basic-addon1"
+   style="font-family: cursive">
+</div>
+                   
+                   <div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text p-3" id="basic-addon1"><i class="icofont-user-alt-7"></i></span>
+  </div>
+  <input type="text" class="form-control" placeholder="Last Name" aria-label="Username" required="" name="ln" aria-describedby="basic-addon1" style="font-family: cursive">
+</div>
+                   <div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text p-3" id="basic-addon1"><i class="icofont-phone icofont-1x"></i></span>
+  </div>
+  <input type="text" class="form-control" placeholder="Phone Number" aria-label="Username" name="ph" aria-describedby="basic-addon1" style="font-family: cursive" pattern="[0-9]{10}">
+</div>
+                   <div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text p-3" id="basic-addon1"><i class="icofont-email icofont-1x"></i></span>
+  </div>
+  <input type="email" class="form-control" placeholder="Email" name="em" aria-label="Username" aria-describedby="basic-addon1" style="font-family: cursive">
+</div>
+                   <div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text p-3" id="basic-addon1"><i class="icofont-unlocked"></i></span>
+  </div>
+  <input type="password" class="form-control" placeholder="Password" required="" name="pw" aria-label="Username" aria-describedby="basic-addon1" style="font-family: cursive">
+</div>
+        
+                        
+                            <br/>
+            		<button type="submit" class="btn btn-outline-light" style="font-family: cursive;color: aliceblue">Register</button>                
+                <p class="text-dark pt-4">Already a User <a href="">Click Here</a> to Login </p>      
+              </form>   
+               <div class="col-md-4"></div>
+                
+                  
+                       
+                  
+        </div>
+        </div>
+    </div>
+  
+
+
+		{% if msg %}
+		<script>
+			alert("{{msg}}")
+		</script>
+		{% endif %}
+
+    {%endblock %}

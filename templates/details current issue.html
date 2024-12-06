@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+
+  <div class="container-fluid " style="background:url({%static 'images/about.jpg' %});background-size: cover" >
+    <div class="lyr" style="background-color: rgba(62,71,29, 0.50);padding: 100px;">
+    <div class="container ">
+      <div class="row text-light text-center">
+        <div class="col-md-12">
+          <h2 style="font-size:60px"><span style="font-weight: bold;">Current</span> Issue</h2>
+          <h5>Home ->Current issue</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+
+    <!---------------------->
+    <div class="container">
+      <div class="row">
+      
+<div class="col-2"></div>
+        <div class="col-8 mt-5">
+          <div class="card" style="width: 100%;box-shadow: 7px 7px 10px #6ac610">
+            {% if i.image %}
+  <img src="{{i.image.url}}" class="card-img-top" alt="..." height="400px">
+  {% endif %}
+  <div class="card-body" style="background-color:#eee;">
+    <h5 class="card-title" style="color: #6ac610;">{{i.title }}</h5>
+    <p class="card-text">{{i.description|safe}}</p>
+    
+  </div>
+</div>
+        </div>
+       
+      </div>
+    </div>
+
+<br><br>
+
+
+    {% endblock %}

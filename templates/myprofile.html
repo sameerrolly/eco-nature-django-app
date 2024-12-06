@@ -1,0 +1,43 @@
+{% extends 'side.html' %}
+{% block content %}
+{% load static %}
+
+      <!-- header ends here -->
+      <div class="container">        
+                     <div class="row text-center">
+                      <div class="col-2"></div>
+                      <div class="col-8 text-center">
+                        <img src={%static "images/admin.png" %} height="150px" height="150px">
+                        <br> <br> <br>  
+                        <center>
+                          <table width="300px" style="color:#000; padding-top:40px" class="pt-5">
+                            <tr>  
+                                <td><h5>Name:</h5> </td>
+                               
+                                <td><h5>{{user.first_name}}  {{user.last_name}}</h5> </td>
+
+                            </tr>
+                            <tr>  
+                                  <td> <h5> Email</h5></td>
+                                  <td>  <h5>{{user.Email}}</h5></td>
+                            </tr>
+                            <tr>
+                              <td> <h5> Phone</h5></td>
+                                  <td>  <h5>{{user.phone}}</h5></td></tr>
+
+                                <tr>
+                              <td> <h5> Address</h5></td>
+                                  <td>  <h5>{{user.Address}}</h5></td></tr>
+
+                                <tr>
+                              <td> <h5> DOB</h5></td>
+                                  <td>  <h5>{{user.DOB}}</h5></td></tr>
+
+                          </table>
+                          <a href="{% url 'Edit_profile' %}">Edit Profile</a>
+                          
+                      </div>
+                      </div></div>
+      <!-- footer --> 
+<!-- JavaScript files-->
+{% endblock %}

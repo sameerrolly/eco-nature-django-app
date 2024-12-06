@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+
+  <div class="container-fluid " style="background:url({%static 'images/about.jpg' %});background-size: cover" >
+    <div class="lyr" style="background-color: rgba(62,71,29, 0.50);padding: 100px;">
+    <div class="container ">
+      <div class="row text-light text-center">
+        <div class="col-md-12">
+          <h2 style="font-size:60px"><span style="font-weight: bold;">Latest</span> News</h2>
+          <h5>Home -> News</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+
+
+
+<div class="container">
+  <div class="row">
+  {% for i in data %}
+  
+    <div class="col-4 p-4">
+      <div  style="background-image:url('{{i.image.url}}');background-size:cover; height: 230px ;padding-top: 130px;box-shadow: 7px 7px 10px #6ac610">
+        
+        <a href="{% url 'details_news' id=i.id %}" class="text-light" style="text-decoration: none;"><h5 class=" p-3" style="background:rgba(0,0,0,0.50); ">{{i.title|truncatechars:"50"}}</h5></a>
+    </div></div>
+      
+  
+  {% endfor %}
+</div></div></div>
+
+
+
+    {% endblock %}
