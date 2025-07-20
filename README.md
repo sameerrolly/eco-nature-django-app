@@ -24,14 +24,6 @@ A Django-based web application focused on promoting environmental awareness and 
 
 ---
 
-## 📦 Installation
-
-Clone the repository:
-
-```bash
-git clone https://github.com/your-username/eco-nature-django-app.git
-cd eco-nature-django-app
-
 ## 👤 Author
 
 - Sameer Rolly  
@@ -41,3 +33,11 @@ cd eco-nature-django-app
 
 This project is licensed under the [MIT License](LICENSE).
 
+
+## 📦 Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/your-username/eco-nature-django-app.git
+cd eco-nature-django-app
