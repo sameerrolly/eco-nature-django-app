@@ -31,3 +31,13 @@ Clone the repository:
 ```bash
 git clone https://github.com/your-username/eco-nature-django-app.git
 cd eco-nature-django-app
+
+## 👤 Author
+
+- Sameer Rolly  
+- IBM Certified Full Stack Web Developer  
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
+
